@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" itemscope itemtype="http://schema.org/Article">
+<head>
+	<meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+
+  <meta property="og:title" content="{{ page.title }}"/>
+  <meta property="og:type" content="{{ page.type }}"/>
+  <meta property="og:url" content="{{ site.root_url | append:page.url }}"/>
+  <meta property="og:image" content="{{ site.root_url | append:page.image_url }}"/>
+  <meta property="og:site_name" content="Dublin Javascript Group"/>
+  <meta property="og:description" content="{{ page.description }}"/>
+  <meta content='width=device-width' name='viewport'>
+  <meta itemprop="name" content="{{ page.title }}">
+  <meta itemprop="description" content="{{ page.description }}">
+  <meta itemprop="image" content="{{ site.root_url | append:page.image_url }}">
+  
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div id="masthead">
+    <div class="inner">
+      <div class="container">
+        {{ content }}
+      </div> <!-- container -->
+    </div> <!-- inner -->
+  </div> <!-- masthead -->
+<!--  <script type="text/javascript">
+  var disqus_shortname = 'dcuml'; 
+  (function () {
+     var s = document.createElement('script'); 
+     s.async = true;
+     s.type = 'text/javascript';
+     s.src = 'http://' + disqus_shortname + '.disqus.com/count.js';
+     (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+   }());
+</script> -->
+</body>
+</html>

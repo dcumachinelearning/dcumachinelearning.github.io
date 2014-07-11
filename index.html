@@ -1,0 +1,10 @@
+---
+layout: home
+type: website
+description: We help machines learn things... 
+---
+
+{% for post in site.posts limit:1 %}
+  <h1>Next Session: <a href="{{ post.url }}">{{ post.title }}</a></h1>
+  {{ post.content }}
+{% endfor %}
