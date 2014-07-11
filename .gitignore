@@ -1,0 +1,7 @@
+*.swo
+*.swp
+.rvmrc
+_site/
+**/*.swp
+**/*~
+**/.DS_Store
